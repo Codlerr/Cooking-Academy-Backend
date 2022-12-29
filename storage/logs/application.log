@@ -1,53 +1,91 @@
-[2022-12-23T11:49:20.055] [INFO] log - Connected to mongo database
-[2022-12-23T11:51:01.570] [INFO] log - Connected to mongo database
-[2022-12-23T11:51:11.037] [INFO] log - Connected to mongo database
-[2022-12-23T11:51:16.656] [INFO] log - Connected to mongo database
-[2022-12-23T11:51:20.709] [INFO] log - Connected to mongo database
-[2022-12-23T11:51:52.347] [INFO] log - Connected to mongo database
-[2022-12-23T11:52:16.314] [INFO] log - Connected to mongo database
-[2022-12-23T11:52:19.632] [INFO] log - Connected to mongo database
-[2022-12-23T11:53:47.913] [INFO] log - Connected to mongo database
-[2022-12-23T11:53:53.687] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:13.710] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:23.623] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:29.281] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:36.080] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:40.844] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:48.080] [INFO] log - Connected to mongo database
-[2022-12-23T11:54:49.177] [INFO] log - Connected to mongo database
-[2022-12-23T11:55:30.430] [ERROR] log - {
+[2022-12-28T10:52:20.778] [INFO] log - Connected to mongo database
+[2022-12-28T10:52:47.347] [INFO] log - Connected to mongo database
+[2022-12-28T10:53:12.699] [INFO] log - Connected to mongo database
+[2022-12-28T10:53:37.824] [INFO] log - Connected to mongo database
+[2022-12-28T10:53:52.278] [INFO] log - Connected to mongo database
+[2022-12-28T10:54:08.552] [INFO] log - Connected to mongo database
+[2022-12-28T10:55:57.492] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:38.601] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:41.501] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:44.965] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:46.566] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:50.844] [INFO] log - Connected to mongo database
+[2022-12-28T10:56:53.434] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:06.787] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:14.505] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:17.470] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:19.474] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:28.378] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:30.823] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:32.762] [INFO] log - Connected to mongo database
+[2022-12-28T10:57:38.551] [INFO] log - Connected to mongo database
+[2022-12-28T11:02:01.764] [ERROR] log - {
   message: 'Exception Handler',
-  error: FormValidatorException: Invalid request
-      at errorFormatter (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\src\v1.0\validators\index.js:7:15)
+  error: NotFoundException: Not found
+      at C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\src\app.js:32:10
       at Layer.handle [as handle_request] (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\layer.js:95:5)
-      at next (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\route.js:144:13)
-      at signUpValidator (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\src\v1.0\validators\user.js:30:5)
-      at processTicksAndRejections (node:internal/process/task_queues:96:5) {
-    isOperational: true,
-    statusCode: undefined,
-    errors: { email: 'Email is unique' }
-  }
-}
-[2022-12-23T11:55:35.787] [ERROR] log - {
-  message: 'Exception Handler',
-  error: FormValidatorException: Invalid request
-      at exceptionConverter (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\src\utils\exceptions.js:10:17)
-      at Layer.handle_error (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\layer.js:71:5)
-      at trim_prefix (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:326:13)
-      at C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:286:9
-      at Function.process_params (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:346:12)
-      at next (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:280:10)
-      at Layer.handle_error (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\layer.js:67:12)
-      at trim_prefix (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:326:13)
+      at trim_prefix (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:328:13)
       at C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:286:9
       at Function.process_params (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:346:12)
       at Immediate.next (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:280:10)
       at Immediate._onImmediate (C:\Users\OEM\Desktop\freelance\cooking-accademy\Coocking-Academy-Backend\node_modules\express\lib\router\index.js:646:15)
       at processImmediate (node:internal/timers:468:21) {
     isOperational: true,
-    statusCode: undefined,
-    errors: {
-      username: 'Error, expected `username` to be unique. Value: `Sibin`'
-    }
+    statusCode: undefined
   }
 }
+[2022-12-28T11:02:22.221] [INFO] log - Connected to mongo database
+[2022-12-28T11:02:52.124] [INFO] log - Connected to mongo database
+[2022-12-28T11:02:58.437] [INFO] log - Connected to mongo database
+[2022-12-28T11:03:01.898] [INFO] log - Connected to mongo database
+[2022-12-28T11:03:16.991] [INFO] log - Connected to mongo database
+[2022-12-28T11:04:22.913] [INFO] log - Connected to mongo database
+[2022-12-28T11:04:43.130] [INFO] log - Connected to mongo database
+[2022-12-28T11:05:00.965] [INFO] log - Connected to mongo database
+[2022-12-28T11:05:17.978] [INFO] log - Connected to mongo database
+[2022-12-28T11:05:26.536] [INFO] log - Connected to mongo database
+[2022-12-28T11:05:58.672] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:15.709] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:20.440] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:22.873] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:26.014] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:49.437] [INFO] log - Connected to mongo database
+[2022-12-28T11:06:59.782] [INFO] log - Connected to mongo database
+[2022-12-28T11:07:07.265] [INFO] log - Connected to mongo database
+[2022-12-28T11:07:31.476] [INFO] log - Connected to mongo database
+[2022-12-28T11:07:45.451] [INFO] log - Connected to mongo database
+[2022-12-28T11:08:27.721] [INFO] log - Connected to mongo database
+[2022-12-28T11:08:48.870] [INFO] log - Connected to mongo database
+[2022-12-28T11:09:44.872] [INFO] log - Connected to mongo database
+[2022-12-28T11:09:54.792] [INFO] log - Connected to mongo database
+[2022-12-28T11:11:15.986] [INFO] log - Connected to mongo database
+[2022-12-28T11:13:36.727] [INFO] log - Connected to mongo database
+[2022-12-28T11:13:51.023] [INFO] log - Connected to mongo database
+[2022-12-28T11:13:58.528] [INFO] log - Connected to mongo database
+[2022-12-28T11:14:28.190] [INFO] log - Connected to mongo database
+[2022-12-28T11:14:35.867] [INFO] log - Connected to mongo database
+[2022-12-28T11:14:43.122] [INFO] log - Connected to mongo database
+[2022-12-28T11:14:47.053] [INFO] log - Connected to mongo database
+[2022-12-28T11:15:20.175] [INFO] log - Connected to mongo database
+[2022-12-28T11:15:56.418] [INFO] log - Connected to mongo database
+[2022-12-28T11:16:06.174] [INFO] log - Connected to mongo database
+[2022-12-28T11:16:13.805] [INFO] log - Connected to mongo database
+[2022-12-28T11:16:19.686] [INFO] log - Connected to mongo database
+[2022-12-28T11:17:05.294] [INFO] log - Connected to mongo database
+[2022-12-28T11:17:09.197] [INFO] log - Connected to mongo database
+[2022-12-28T11:17:44.496] [INFO] log - Connected to mongo database
+[2022-12-28T11:18:23.632] [INFO] log - Connected to mongo database
+[2022-12-28T11:18:28.207] [INFO] log - Connected to mongo database
+[2022-12-28T11:18:59.272] [INFO] log - Connected to mongo database
+[2022-12-28T11:19:11.918] [INFO] log - Connected to mongo database
+[2022-12-28T11:19:19.070] [INFO] log - Connected to mongo database
+[2022-12-28T11:23:24.915] [INFO] log - Connected to mongo database
+[2022-12-28T11:23:29.074] [INFO] log - Connected to mongo database
+[2022-12-28T11:23:44.493] [INFO] log - Connected to mongo database
+[2022-12-28T11:24:06.288] [INFO] log - Connected to mongo database
+[2022-12-28T11:24:31.028] [INFO] log - Connected to mongo database
+[2022-12-28T11:24:35.202] [INFO] log - Connected to mongo database
+[2022-12-28T11:26:28.614] [INFO] log - Connected to mongo database
+[2022-12-28T11:26:34.206] [INFO] log - Connected to mongo database
+[2022-12-28T11:31:24.618] [INFO] log - Connected to mongo database
+[2022-12-28T11:31:31.927] [INFO] log - Connected to mongo database

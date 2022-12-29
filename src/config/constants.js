@@ -10,7 +10,7 @@ module.exports = {
     STATUS_INACTIVE: "inactive", // in-active
     STATUS_SUSPENDED: "suspended", // suspended
     ROUTE_RESET_PASSWORD: "/auth/reset-password?token={token}",
-
+    ITEM_TYPE_COURSE: "Course",
     // roles
     ROLE_SUPER_ADMIN: "superAdmin",
     ROLE_STUDENT: "Student",
@@ -20,4 +20,14 @@ module.exports = {
     // username length
     USERNAME_MIN_LENGTH: 6,
     USERNAME_MAX_LENGTH: 30,
+
+    // string statues
+    STATUS_INITIATED: "initiated",
+    STATUS_COMPLETED: "completed",
+    STATUS_CANCELLED: "cancelled",
+    STATUS_FAILED: "failed",
+
+    // payment types
+    PAYMENT_TYPE_IN: "IN",
+    PAYMENT_TYPE_OUT: "OUT",
 };

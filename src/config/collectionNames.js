@@ -5,4 +5,8 @@ module.exports = {
     USER_DEVICE: "user_devices",
     COURSE: "courses",
     MIGRATION: "migrations",
+    SUBSCRIPTION: "subscription",
+    CART: "cart",
+    ORDER: "order",
+    PAYMENT: "payment",
 };

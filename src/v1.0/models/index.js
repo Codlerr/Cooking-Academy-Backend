@@ -7,4 +7,9 @@ module.exports = {
     RoleMaster: require("./roleMaster")(mongoose, collectionNames?.ROLE_MASTER),
     UserRole: require("./userRole")(mongoose, collectionNames?.USER_ROLE),
     UserDevice: require("./userDevice")(mongoose, collectionNames?.USER_DEVICE),
+    Course: require("./course")(mongoose, collectionNames?.COURSE),
+    Subscription: require("./subscription")(mongoose, collectionNames?.SUBSCRIPTION),
+    Cart: require("./cart")(mongoose, collectionNames?.CART),
+    Order: require("./order")(mongoose, collectionNames?.ORDER),
+    Payment: require("./payment")(mongoose, collectionNames?.PAYMENT),
 };

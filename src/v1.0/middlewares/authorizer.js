@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken");
 const config = require("../../config");
-const { STATUS_ACTIVE, YES, ROLE_SUPER_ADMIN } = require("../../config/constants");
+const { STATUS_ACTIVE, YES, ROLE_SUPER_ADMIN, ROLE_STUDENT } = require("../../config/constants");
 const { UnauthorizedException } = require("../../utils/customExceptions");
 const { getUserByMatch, getUserDeviceByMatch, getUserRoleByMatch, getUserById } = require("../services/internal/user");
 const { getRoleByName } = require("../services/internal/role");
@@ -132,9 +132,18 @@ const isSuperAdmin = async (req, res, next) => {
         .catch(next);
 };
 
+const isStudent = async (req, res, next) => {
+    const payload = { userId: req?.user?._id, role: ROLE_STUDENT };
+    verifyUserRole(payload)
+        .then(() => {
+            next();
+        })
+        .catch(next);
+};
 module.exports = {
-    isValidResetPasswordToken, // authentication for reset password
-    isValidRefreshToken, // authentication for token refresh
-    isUserAuthenticated, // authentication for user identity
-    isSuperAdmin, // check whether logged in user has super admin privilage
+    isValidResetPasswordToken,
+    isValidRefreshToken,
+    isUserAuthenticated,
+    isSuperAdmin,
+    isStudent,
 };
