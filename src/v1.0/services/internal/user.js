@@ -59,6 +59,10 @@ const getUserDeviceByMatch = async (match) => {
     return await UserDevice.findOne(match);
 };
 
+const editUserById = async (userId, data) => {
+    return await User.updateOne({ _id: userId }, { $set: data });
+};
+
 module.exports = {
     createUser,
     getUserById,
@@ -71,4 +75,5 @@ module.exports = {
     createOrUpdateUserDevice,
     getUserDeviceByMatch,
     updateUserDeviceByMatch,
+    editUserById,
 };

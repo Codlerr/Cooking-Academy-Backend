@@ -1,5 +1,5 @@
 const { handleChangePassword } = require("../../services/internal/auth");
-const { getUserById, updateUser } = require("../../services/internal/user");
+const { getUserById, editUserById } = require("../../services/internal/user");
 const messages = require("../../../config/messages");
 
 const changePassword = async (req) => {
@@ -14,15 +14,11 @@ const viewProfile = async (req) => {
 
 const updateProfile = async (req) => {
     const data = {
-        name: req?.body?.name,
-        phoneNumber: req?.body?.phoneNumber,
+        username: req?.body?.username,
         email: req?.body?.email,
-        gender: req?.body?.gender,
-        dob: req?.body?.dob,
         location: req?.body?.location,
-        sectorId: req?.body?.sectorId,
     };
-    await updateUser({ _id: req?.user?._id }, data);
+    await editUserById({ _id: req?.user?._id }, data);
     return { message: messages.profileUpdateSuccuess };
 };
 
