@@ -9,4 +9,5 @@ module.exports = {
     CART: "cart",
     ORDER: "order",
     PAYMENT: "payment",
+    CLASS_DETAILS: "class_details",
 };

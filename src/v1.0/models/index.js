@@ -8,6 +8,7 @@ module.exports = {
     UserRole: require("./userRole")(mongoose, collectionNames?.USER_ROLE),
     UserDevice: require("./userDevice")(mongoose, collectionNames?.USER_DEVICE),
     Course: require("./course")(mongoose, collectionNames?.COURSE),
+    ClassDetails: require("./calssDetails")(mongoose, collectionNames?.CLASS_DETAILS),
     Subscription: require("./subscription")(mongoose, collectionNames?.SUBSCRIPTION),
     Cart: require("./cart")(mongoose, collectionNames?.CART),
     Order: require("./order")(mongoose, collectionNames?.ORDER),

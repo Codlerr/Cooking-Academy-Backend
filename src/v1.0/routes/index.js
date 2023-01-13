@@ -14,6 +14,6 @@ router.use("/account", isUserAuthenticated, account);
 router.use("/auth", auth);
 router.use("/gust", gust);
 router.use("/course", [isUserAuthenticated, isSuperAdmin], course);
-router.use("/student", [isUserAuthenticated, isStudent], student);
+router.use("/student", student);
 
 module.exports = router;

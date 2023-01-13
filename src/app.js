@@ -14,7 +14,6 @@ const { NotFoundException } = require("./utils/customExceptions");
 
 const app = express();
 
-
 // parse application/json
 app.use(express.json({ limit: config?.bodyLimit ?? "" }));
 

@@ -12,13 +12,8 @@ module.exports = (mongoose, collectionName) => {
             },
             createdBy: {
                 type: String,
-                required: true,
             },
             image: {
-                type: String,
-                default: "",
-            },
-            videoLink: {
                 type: String,
                 default: "",
             },
@@ -45,22 +40,6 @@ module.exports = (mongoose, collectionName) => {
             price: {
                 type: Number,
                 required: true,
-            },
-            reviewCount: {
-                type: Number,
-                default: 0,
-            },
-            likeCount: {
-                type: Number,
-                default: 0,
-            },
-            dislikeCount: {
-                type: Number,
-                default: 0,
-            },
-            avgRating: {
-                type: Number,
-                default: 0,
             },
             subscriptionCount: {
                 type: Number,

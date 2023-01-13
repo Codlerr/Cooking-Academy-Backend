@@ -11,6 +11,8 @@ const { makeQueryBuilder } = require("../services/internal/queryBuilder");
 
 const addCourse = async (req) => {
     const data = req?.body;
+    console.log(req.file);
+    console.log(data);
     data.createdBy = req?.user?._id;
     const course = await createCourse(data);
     if (req.file) {
