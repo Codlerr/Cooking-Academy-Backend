@@ -13,6 +13,10 @@ router.get("/success", async (req, res) => {
   const payerId = req.query.PayerID;
   const userId = req?.query?.UID;
   const cart = await getCartByUserId(userId);
+  const productId = [];
+  await cart.itemId.map((item) => {
+    productId.push(item._id);
+  });
   const execute_payment_json = {
     payer_id: payerId,
     transactions: [
@@ -31,8 +35,11 @@ router.get("/success", async (req, res) => {
       if (error) {
         return { error };
       } else {
-        addOrder(cart?.itemId, userId).then((order) => {
-          res.redirect("https://cookingacademy.qa/payment-success");
+        addOrder(productId, userId).then((order) => {
+          res.redirect(
+            "https://cookingacademy.qa/payment-success" +
+              `?orderId=${order.orderId}`
+          );
         });
       }
     }
