@@ -8,14 +8,13 @@ router.post("/", makeCallback(classController.addClass));
 // GET  : Get all class
 router.get("/", makeCallback(classController.viewClasss));
 
-// GET  : Get all class
+// PUT  : delete lesson by Id
 router.put("/lession", makeCallback(classController.deleteLesson));
 
 // GET  : Get specified class by courseId
 router.get("/:courseId/class", makeCallback(classController.viewClassByCourseId));
 
 // GET  : Get specified class
-
 router.get("/:id", makeCallback(classController.viewClass));
 
 // PUT  : Edit the class

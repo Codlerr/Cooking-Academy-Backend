@@ -29,9 +29,19 @@ const viewStudentCourses = async (req) => {
     const queryBuilder = makeQueryBuilder(req);
     const condition = { userId: req?.user?._id };
     const data = await getSubscriptions(queryBuilder, condition);
-    const courses = await processSubscriptions(data?.subscriptions);
+    const result = await Promise.all(
+        data?.subscriptions
+            .map(function (e) {
+                return e.itemId;
+            })
+            .filter(function (elem, index, self) {
+                return index === self.indexOf(elem);
+            })
+    );
+    const total = result.length;
+    const courses = await processSubscriptions(result);
     return {
-        data: { courses, total: data?.total },
+        data: { courses, total: total },
         message: messages.success,
     };
 };

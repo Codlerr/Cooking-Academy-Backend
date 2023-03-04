@@ -30,4 +30,7 @@ module.exports = {
     // payment types
     PAYMENT_TYPE_IN: "IN",
     PAYMENT_TYPE_OUT: "OUT",
+    // order id prefix
+    ORDER_ID_PREFIX: "COOKINGACADEMY",
+    ODRER_ID_PAD_LENGTH: 4,
 };

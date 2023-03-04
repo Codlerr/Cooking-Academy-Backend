@@ -24,7 +24,7 @@ const getSubscriptions = async (queryBuilder, condition) => {
 const processSubscriptions = async (subscriptions) => {
     const courses = await Promise.all(
         subscriptions?.map(async (item) => {
-            return await getCourseById(item?.itemId);
+            return await getCourseById(item);
         })
     );
     return courses;

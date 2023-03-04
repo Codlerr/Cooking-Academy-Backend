@@ -12,7 +12,7 @@ module.exports = (mongoose, collectionName) => {
         {
             userId: {
                 type: String,
-                required: true,
+                default: "",
             },
             orderId: {
                 type: String,

@@ -11,7 +11,6 @@ const { makeQueryBuilder } = require("../services/internal/queryBuilder");
 
 const addClass = async (req) => {
     const data = req?.body;
-    console.log(data);
     data.createdBy = req?.user?._id;
     const classData = await createClass(data);
     return {
@@ -31,10 +30,8 @@ const viewClasss = async (req) => {
 
 const editClass = async (req) => {
     const data = req?.body;
-    console.log(data);
     await editClassById(req?.params?.id, data);
     return { message: messages?.success };
-    
 };
 
 const deleteClass = async (req) => {

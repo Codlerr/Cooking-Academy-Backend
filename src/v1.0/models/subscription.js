@@ -3,11 +3,11 @@ module.exports = (mongoose, collectionName) => {
         {
             userId: {
                 type: String,
-                required: true,
+                default: "",
             },
             itemId: {
                 type: String,
-                required: true,
+                default: "",
             },
             startsAt: {
                 type: Date,

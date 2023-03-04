@@ -18,7 +18,7 @@ module.exports = (mongoose, collectionName) => {
             createdBy: {
                 type: String,
             },
-            instructorName: {
+            instrecterName: {
                 type: String,
                 default: "",
             },
