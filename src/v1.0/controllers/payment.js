@@ -32,8 +32,8 @@ const createPayment = async (req) => {
         payment_method: "paypal",
       },
       redirect_urls: {
-        return_url: `http://localhost:3000/api/2.0/success?UID=${userId}`,
-        cancel_url: "http://localhost:3000/cancel",
+        return_url: `https://cooking-academy-backend.onrender.com/api/2.0/success?UID=${userId}`,
+        cancel_url: "https://cooking-academy-backend.onrender.com/cancel",
       },
       transactions: [
         {
