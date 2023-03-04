@@ -32,7 +32,7 @@ router.get("/success", async (req, res) => {
         return { error };
       } else {
         addOrder(cart?.itemId, userId).then((order) => {
-          res.redirect("https://cooking-academy-backend.onrender.com/payment-success");
+          res.redirect("https://cookingacademy.qa/payment-success");
         });
       }
     }
